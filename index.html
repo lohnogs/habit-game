@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Game Habit</h1>
+
+    <section id="status" class="status-card">
+      <p id="congrats-message" class="congrats-message"></p>
+      <p id="level" class="status-level-container">
+        <span class="class-name">
+          <span class="emoji">🪖</span> <span class="text">Soldado</span>
+        </span>
+        <span class="level-count">| Nível 0 / 10</span>
+      </p>
+    </section>
+
+    <button id="toggle-theme" aria-label="Alternar tema">⚫</button>
+  </header>
+
+  <main class="container">
+    <section id="habit-form" class="card">
+      <input type="text" id="habit-input" placeholder="Novo hábito…" aria-label="Nome do hábito" />
+      <button id="add-habit">Adicionar</button>
+    </section>
+
+    <section id="habits-container" class="stack"></section>
+  </main>
+
+<footer class="container footer">
+  <p>Bora para o próximo nível?</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
